@@ -51,16 +51,8 @@ export default function Footer() {
                             <Logo color={useColorModeValue('gray.700', 'white')} />
                         </Box>
                         <Text fontSize={'sm'}>
-                            © 2022 Chakra Templates. All rights reserved
+                            © 2022 Bewhaos A/S. All rights reserved
                         </Text>
-                    </Stack>
-                    <Stack align={'flex-start'}>
-                        <ListHeader>Product</ListHeader>
-                        <Link href={'#'}>Overview</Link>
-                        <Link href={'#'}>Features</Link>
-                        <Link href={'#'}>Tutorials</Link>
-                        <Link href={'#'}>Pricing</Link>
-                        <Link href={'#'}>Releases</Link>
                     </Stack>
                     <Stack align={'flex-start'}>
                         <ListHeader>Company</ListHeader>
