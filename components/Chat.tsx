@@ -6,7 +6,7 @@ import MessageParser from '../config/MessageParser'
 
 const Chat = () => {
     return (
-        <Chatbot actionProvider={ActionProvider} messageParser={MessageParser} config={config} />
+        <Chatbot actionProvider={ActionProvider} messageParser={MessageParser} config={config as any} />
     )
 }
 

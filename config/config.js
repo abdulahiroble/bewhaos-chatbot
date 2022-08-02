@@ -1,11 +1,7 @@
 import {createChatBotMessage} from "react-chatbot-kit";
 import CoBotAvatar from "../components/CoBotAvatar";
 import Overview from "../widgets/Overview";
-// import Overview from "./widgets/Overview";
-// import GlobalStatistics from "./widgets/GlobalStatistics";
-// import LocalStatistics from "./widgets/LocalStatistics";
-// import Contact from "./widgets/Contact";
-// import MedicineDelivery from "./widgets/MedicineDelivery";
+import WeatherInfo from "../widgets/WeatherInfo";
 
 const config = {
     lang: "no",
@@ -31,27 +27,12 @@ const config = {
             widgetFunc: (props) => <Overview {...props} />,
             mapStateToProps: ["messages"]
         },
-        // {
-        //   widgetName: "overview",
-        //   widgetFunc: (props) => <Overview {...props} />,
-        //   mapStateToProps: ["messages"]
-        // },
-        // {
-        //   widgetName: "globalStatistics",
-        //   widgetFunc: (props) => <GlobalStatistics />
-        // },
-        // {
-        //   widgetName: "localStatistics",
-        //   widgetFunc: (props) => <LocalStatistics />
-        // },
-        // {
-        //   widgetName: "emergencyContact",
-        //   widgetFunc: (props) => <Contact />
-        // },
-        // {
-        //   widgetName: "medicineDelivery",
-        //   widgetFunc: (props) => <MedicineDelivery />
-        // }
+
+        {
+            widgetName: "weather",
+            widgetFunc: (props) => <WeatherInfo {...props} />,
+            mapStateToProps: ["messages"]
+        }
     ]
 };
 

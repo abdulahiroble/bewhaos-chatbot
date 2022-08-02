@@ -16,7 +16,7 @@ export default function Bot() {
                 <Fade big>
                     <div className={styles.appchatbotcontainer}>
                         <Chatbot
-                            config={config}
+                            config={config as any}
                             messageParser={MessageParser}
                             actionProvider={ActionProvider}
                         />

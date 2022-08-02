@@ -25,7 +25,7 @@ const ActionProvider = ({createChatBotMessage, setState, children}) => {
         const botMessage = createChatBotMessage(
             'Sorry, we don\'t have any screwdrivers in stock.',
             {
-                withAvatar: false,
+                withAvatar: true,
                 delay: 400,
                 widget: "overview"
             }
@@ -41,11 +41,28 @@ const ActionProvider = ({createChatBotMessage, setState, children}) => {
         const botMessage = createChatBotMessage(
             'We have a wide range of hammers available. Here is a quick overview:',
             {
-                withAvatar: false,
+                withAvatar: true,
                 delay: 400,
                 widget: "overview"
             }
         );
+
+        setState((prev) => ({
+            ...prev,
+            messages: [...prev.messages, botMessage],
+        }));
+    }
+
+    const handleWeather = () => {
+        const botMessage = createChatBotMessage(
+            'Todays weather is:',
+            {
+                withAvatar: false,
+                delay: 400,
+                widget: "weather"
+            }
+        );
+
 
         setState((prev) => ({
             ...prev,
@@ -74,6 +91,7 @@ const ActionProvider = ({createChatBotMessage, setState, children}) => {
                         screwdrivers: handleScrewdrivers,
                         overview: handleOverview,
                         bye: handleBye,
+                        weather: handleWeather
                     },
                 });
             })}
