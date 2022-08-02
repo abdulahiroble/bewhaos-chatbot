@@ -4,7 +4,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 import {getData} from "../data";
 
 const WeatherInfo = () => {
-    const [stats, setStats] = useState([]);
+    const [stats, setStats] = useState({}) as any;
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {

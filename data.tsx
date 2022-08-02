@@ -2,6 +2,7 @@ type WeatherData = {
     json(): WeatherData | PromiseLike<WeatherData>;
     data?: any;
     current?: any;
+    temp_c?: number;
 }
 
 export const getData = async () => {
