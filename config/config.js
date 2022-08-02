@@ -1,5 +1,6 @@
 import {createChatBotMessage} from "react-chatbot-kit";
 import CoBotAvatar from "../components/CoBotAvatar";
+import Overview from "../widgets/Overview";
 // import Overview from "./widgets/Overview";
 // import GlobalStatistics from "./widgets/GlobalStatistics";
 // import LocalStatistics from "./widgets/LocalStatistics";
@@ -8,10 +9,10 @@ import CoBotAvatar from "../components/CoBotAvatar";
 
 const config = {
     lang: "no",
-    botName: "CoBot",
+    botName: "BewhaosBot",
     initialMessages: [
         createChatBotMessage(
-            `Hi, I'm here to provide you with latest COVID 19 data to keep you safe!`
+            `Hi, I'm here to help you with anything hardware related!🤖`,
         ),
         // createChatBotMessage(
         //     "Here's a quick overview of what I can help you with. You can also type in.",
@@ -24,29 +25,34 @@ const config = {
     ],
     state: {},
     customComponents: {botAvatar: (props) => <CoBotAvatar {...props} />},
-    //   widgets: [
-    //     {
-    //       widgetName: "overview",
-    //       widgetFunc: (props) => <Overview {...props} />,
-    //       mapStateToProps: ["messages"]
-    //     },
-    //     {
-    //       widgetName: "globalStatistics",
-    //       widgetFunc: (props) => <GlobalStatistics />
-    //     },
-    //     {
-    //       widgetName: "localStatistics",
-    //       widgetFunc: (props) => <LocalStatistics />
-    //     },
-    //     {
-    //       widgetName: "emergencyContact",
-    //       widgetFunc: (props) => <Contact />
-    //     },
-    //     {
-    //       widgetName: "medicineDelivery",
-    //       widgetFunc: (props) => <MedicineDelivery />
-    //     }
-    //   ]
+    widgets: [
+        {
+            widgetName: "overview",
+            widgetFunc: (props) => <Overview {...props} />,
+            mapStateToProps: ["messages"]
+        },
+        // {
+        //   widgetName: "overview",
+        //   widgetFunc: (props) => <Overview {...props} />,
+        //   mapStateToProps: ["messages"]
+        // },
+        // {
+        //   widgetName: "globalStatistics",
+        //   widgetFunc: (props) => <GlobalStatistics />
+        // },
+        // {
+        //   widgetName: "localStatistics",
+        //   widgetFunc: (props) => <LocalStatistics />
+        // },
+        // {
+        //   widgetName: "emergencyContact",
+        //   widgetFunc: (props) => <Contact />
+        // },
+        // {
+        //   widgetName: "medicineDelivery",
+        //   widgetFunc: (props) => <MedicineDelivery />
+        // }
+    ]
 };
 
 export default config;
