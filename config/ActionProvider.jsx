@@ -23,12 +23,7 @@ const ActionProvider = ({createChatBotMessage, setState, children}) => {
 
     const handleScrewdrivers = () => {
         const botMessage = createChatBotMessage(
-            'Sorry, we don\'t have any screwdrivers in stock.',
-            {
-                withAvatar: true,
-                delay: 400,
-                widget: "overview"
-            }
+            'Sorry, we don\'t have any screwdrivers in stock 😿'
         );
 
         setState((prev) => ({
