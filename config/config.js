@@ -10,14 +10,6 @@ const config = {
         createChatBotMessage(
             `Hi, I'm here to help you with anything hardware related!🤖`,
         ),
-        // createChatBotMessage(
-        //     "Here's a quick overview of what I can help you with. You can also type in.",
-        //     {
-        //         withAvatar: false,
-        //         delay: 400,
-        //         widget: "overview"
-        //     }
-        // )
     ],
     state: {},
     customComponents: {botAvatar: (props) => <CoBotAvatar {...props} />},

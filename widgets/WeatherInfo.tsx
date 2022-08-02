@@ -22,7 +22,6 @@ const WeatherInfo = () => {
     return (
         <div className="stats">
             <div className="column-left">
-                {/* <p> Today's temperature:</p> */}
             </div>
 
             <div className="column-right">
