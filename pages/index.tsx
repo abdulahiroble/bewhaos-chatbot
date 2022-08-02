@@ -1,11 +1,16 @@
 import type {NextPage} from 'next'
 import Chat from '../components/Chat'
+import Features from '../components/Features'
+import Layout from '../components/Layout'
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <Chat />
-    </div>
+    <>
+      <Layout>
+        <Features />
+        <Chat />
+      </Layout>
+    </>
   )
 }
 

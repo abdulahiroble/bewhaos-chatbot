@@ -1,14 +1,13 @@
 import '../styles/globals.css'
 import type {AppProps} from 'next/app'
-// import Chatbot from 'react-chatbot-kit'
-// import config from '../config/config'
-// import ActionProvider from '../config/config'
-// import MessageParser from '../config/config'
+import {ChakraProvider} from '@chakra-ui/react'
 
 function MyApp({Component, pageProps}: AppProps) {
-  return <Component {...pageProps} >
-    {/* <Chatbot actionProvider={ActionProvider} messageParser={MessageParser} config={config} /> */}
-  </Component>
+  return (
+    <ChakraProvider>
+      <Component {...pageProps} />
+    </ChakraProvider>
+  )
 }
 
 export default MyApp
