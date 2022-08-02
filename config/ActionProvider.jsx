@@ -55,7 +55,7 @@ const ActionProvider = ({createChatBotMessage, setState, children}) => {
 
     const handleWeather = () => {
         const botMessage = createChatBotMessage(
-            'The weather is fine today. The temperature is about:',
+            'Todays weather is:',
             {
                 withAvatar: false,
                 delay: 400,
