@@ -66,7 +66,7 @@ const ActionProvider = ({createChatBotMessage, setState, children}) => {
     }
 
     const handleBye = () => {
-        const botMessage = createChatBotMessage('Bye! See you soon.');
+        const botMessage = createChatBotMessage('Bye! Have a nice day! 😁');
 
         setState((prev) => ({
             ...prev,
