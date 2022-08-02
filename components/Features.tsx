@@ -12,8 +12,12 @@ import {
 } from '@chakra-ui/react';
 import {
     IoAnalyticsSharp,
+    IoHammer,
+    IoHeadset,
     IoLogoBitcoin,
+    IoMegaphone,
     IoSearchSharp,
+    IoTv,
 } from 'react-icons/io5';
 import {ReactElement} from 'react';
 
@@ -54,9 +58,9 @@ export default function Features() {
                         p={2}
                         alignSelf={'flex-start'}
                         rounded={'md'}>
-                        Our Story
+                        What we offer
                     </Text>
-                    <Heading>A digital Product design agency</Heading>
+                    <Heading>Everything you need and more</Heading>
                     <Text color={'gray.500'} fontSize={'lg'}>
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                         nonumy eirmod tempor invidunt ut labore
@@ -70,22 +74,22 @@ export default function Features() {
                         }>
                         <Feature
                             icon={
-                                <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
+                                <Icon as={IoHammer} color={'yellow.500'} w={5} h={5} />
                             }
                             iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-                            text={'Business Planning'}
+                            text={'Hammers'}
                         />
                         <Feature
-                            icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
+                            icon={<Icon as={IoTv} color={'green.500'} w={5} h={5} />}
                             iconBg={useColorModeValue('green.100', 'green.900')}
-                            text={'Financial Planning'}
+                            text={'Tv'}
                         />
                         <Feature
                             icon={
-                                <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
+                                <Icon as={IoMegaphone} color={'purple.500'} w={5} h={5} />
                             }
                             iconBg={useColorModeValue('purple.100', 'purple.900')}
-                            text={'Market Analysis'}
+                            text={'Megaphones'}
                         />
                     </Stack>
                 </Stack>
