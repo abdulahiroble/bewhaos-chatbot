@@ -7,7 +7,7 @@ const Options = (props) => {
                     return (
                         <div
                             className="option-item"
-                            onClick={option.handler}
+                            onClick={() => option.handler}
                             key={option.id}
                         >
                             <div className="option-name">
