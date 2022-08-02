@@ -9,15 +9,14 @@ import styles from '../styles/Home.module.css'
 const Home: NextPage = () => {
   return (
     <>
-      {/* <Layout>
+      <Layout>
         <ChakraProvider resetCSS>
           <Box bg="gray.100" >
             <Features />
             <Bot />
           </Box>
         </ChakraProvider>
-      </Layout> */}
-      <Bot />
+      </Layout>
     </>
   )
 }
