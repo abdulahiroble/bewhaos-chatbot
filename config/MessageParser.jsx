@@ -22,6 +22,11 @@ const MessageParser = ({children, actions}) => {
             actions.bye();
         }
 
+        if (message.includes('weather')) {
+            actions.weather();
+        }
+
+
     };
 
     return (
